@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/gridimg"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/vijayawada"
+        android:background="@drawable/circle_black"
+        android:layout_gravity="center" />
+    <TextView
+        android:id="@+id/gridtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="vijayawada"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:id="@+id/catog_id"
+        android:visibility="gone"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FromActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/second">
+    <TextView
+        android:id="@+id/vechiletype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bike"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_margin="10sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        android:layout_above="@+id/formcard"
+        android:textColor="@color/white"
+        />
+    <android.support.v7.widget.CardView
+        android:id="@+id/formcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:elevation="25sp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10sp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="select city"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins"
+                android:textStyle="normal"
+                android:textColor="@color/darkgray"
+                android:layout_marginTop="5sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10sp">
+                <TextView
+                    android:id="@+id/select_city_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="select city"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/select_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="select city"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="35sp">
+                <TextView
+                    android:id="@+id/select_pickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pick up location"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="normal"
+                    android:textColor="@color/darkgray"
+                    android:layout_marginTop="10sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10sp">
+                    <TextView
+                        android:id="@+id/pickuptxt_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Pick up"
+                        android:textStyle="normal"
+                        android:textSize="18sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/pickuptxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pick up"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:textSize="18sp" />
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1sp"
+                    android:background="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Drop up location"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="normal"
+                    android:textColor="@color/darkgray"
+                    android:layout_marginTop="10sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10sp">
+                    <TextView
+                        android:id="@+id/select_drop_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:text="Drop up"
+                        android:textSize="18sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/select_drop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Drop up"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1sp"
+                    android:background="@color/black"/>
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="15sp"
+                android:layout_margin="5sp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10sp"
+                    android:padding="10sp"
+                    android:weightSum="4">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="2"
+                        android:elevation="15sp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/fromdate1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="00"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="35sp"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:id="@+id/frommonth1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="mon"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:id="@+id/year1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:text="0000"
+                            />
+                        <TextView
+                            android:id="@+id/mon1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:text="0000"
+                            />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_to"
+                        android:layout_gravity="center"
+                        android:padding="5sp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/circle"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="2"
+                        android:elevation="15sp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/fromdate2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="00"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="35sp"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:id="@+id/frommonth2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="mon"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:id="@+id/year2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:text="0000"
+                            />
+                        <TextView
+                            android:id="@+id/mon2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:text="0000"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:weightSum="4">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:elevation="15sp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Start :"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:id="@+id/formtime1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00:00"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="5sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginLeft="05sp"
+                        android:elevation="15sp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="End :"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:id="@+id/formtime2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00:00"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="5sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/showvehical"
+                android:layout_width="200sp"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25sp"
+                android:text="show me Vehicles"
+                android:fontFamily="@font/poppins"
+                android:textColor="@drawable/btn_text"
+                android:background="@drawable/btn_capusle"
+                android:layout_margin="15sp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,1 @@
+include ':app', ':payment', ':app_payu', ':payUMoneysdk', ':app_pay'

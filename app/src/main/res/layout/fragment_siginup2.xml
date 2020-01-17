@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Siginup2Fragment">
+
+    <ImageView
+        android:id="@+id/image1_sig2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_up"
+        android:layout_gravity="top"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Docments"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_above="@id/loginlayout"
+        android:layout_marginBottom="15sp"
+        android:layout_marginLeft="25sp"/>
+
+    <LinearLayout
+        android:id="@+id/loginlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image1_sig2"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:hint="Enter Driving Licence No "
+            android:inputType="text"
+            android:padding="10sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:layout_margin="10sp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_action_pics" />
+
+            <ImageView
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:layout_margin="10sp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_action_pics" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:padding="10sp"
+            android:text="Identy Proof"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+             />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:layout_margin="10sp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_action_pics" />
+
+            <ImageView
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:layout_margin="10sp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_action_pics" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/login_down" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginBottom="43dp"
+        android:text="ok"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:background="@drawable/login_btn_bg" />
+
+</RelativeLayout>

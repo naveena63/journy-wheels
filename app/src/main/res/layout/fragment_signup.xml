@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_up"
+        android:layout_gravity="top"
+        />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Register"
+    android:textSize="35sp"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:gravity="center"
+    android:layout_above="@id/loginlayout"
+    android:layout_marginBottom="15sp"/>
+
+    <LinearLayout
+        android:id="@+id/loginlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50sp"
+            android:background="@drawable/login_user_bg"
+            android:drawableLeft="@drawable/login_user_icon"
+            android:hint="Name"
+            android:inputType="text"
+            android:padding="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50sp"
+            android:background="@drawable/email_btn"
+            android:drawableLeft="@drawable/reg_email_btn"
+            android:hint="Email"
+            android:inputType="text"
+            android:padding="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50sp"
+            android:background="@drawable/email_btn"
+            android:drawableLeft="@drawable/login_pass_icon"
+            android:hint="Password"
+            android:inputType="text"
+            android:padding="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_pass_bg"
+            android:drawableLeft="@drawable/login_pass_icon"
+            android:hint="Confrom Password"
+            android:layout_marginRight="50sp"
+            android:inputType="textPassword"
+            android:padding="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/signup_reg_btn"
+        android:layout_width="65dp"
+        android:layout_height="65sp"
+        android:layout_alignRight="@id/loginlayout"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/login_btn_bg"
+        android:src="@drawable/reg_register_btn"
+        android:elevation="15sp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/login_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/loginlayout"
+        android:layout_marginBottom="39dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/login_reg_btn"
+        android:gravity="right"
+        android:paddingLeft="25sp"
+        android:paddingRight="15sp"
+        android:paddingBottom="15sp"
+        android:paddingTop="15sp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/login_down" />
+</RelativeLayout>

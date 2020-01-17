@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">JW</string>
+    <string name="title_activity_mainscreen">MainscreenActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="offers">Offers</string>
+
+    <string name="city_name"><b>City:</b></string>
+
+    <string name="contactus">JOURNEY WHEELS,
+#19-1-112/A  , JM COMPLEX
+OLD EXHIBITION GROUND,
+NEAR OPP RTC BUS STAND,
+TIRUPATI,
+ANDHRA PRADESH-517501
+
+</string>
+
+    <string name="aboutus">JourneyWheels offers self drive cars, hire a bicycle,
+        bike rental services. Get more number of choices for your lovely journey
+        through JourneyWheels which provides Bike Rentals, Bicycle &amp; Car Rental Services in Vijayawada,
+        Tirupati, Vizag, Nellore and Rajahmundry. We provide an efficient pickup and drop servie and also gives the value of
+        your time. Now book through online to hire a bike/car/bicyle.</string>
+
+    <string name="aboutus2">Rent a bike from JourneyWheels and get 10%
+        off on online bookings and reach your destinations safely and happily.</string>
+
+
+</resources>

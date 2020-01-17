@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/usid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25sp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/myprolog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        tools:ignore="RtlCompat"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        <!--        <ImageView-->
+<!--            android:id="@+id/prologimg"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginTop="152dp"-->
+<!--            android:src="@drawable/prologimag" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/loginButn"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginBottom="@dimen/dimen_15dp"-->
+<!--            android:background="@drawable/buttonstyleithgradient"-->
+<!--            android:fontFamily="@font/poppins"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Log In"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#fff" />-->
+
+        <TextView
+            android:id="@+id/prologintxt"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:background="@drawable/buttonstyleithgradient"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Log In"
+            android:textStyle="bold"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/proprofile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="15sp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/profileimg"/>
+
+                    <TextView
+                        android:id="@+id/proname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="naveena pallantla"
+                        android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/proid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_action_email"/>
+                    <TextView
+                        android:id="@+id/proemail"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Wiliam@gmail.com"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_local_phone_black_24dp"/>
+                    <TextView
+                        android:id="@+id/prophone"
+
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="+266 225 225"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_moredetials"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableRight="@drawable/ic_action_down"
+                    android:elevation="15sp"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="18sp"
+                    android:text="more detials"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/moredetials"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="RtlCompat"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date of Birth"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="15sp"/>
+                    <TextView
+                        android:id="@+id/prodob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date of birth"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_15sp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:paddingLeft="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginTop="5sp"
+                        android:paddingLeft="15sp"/>
+                    <TextView
+                        android:id="@+id/progender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="gender"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:paddingLeft="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nation"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginTop="5sp"
+                        android:paddingLeft="15sp"/>
+                    <TextView
+                        android:id="@+id/pronation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nation"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:paddingLeft="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginTop="5sp"
+                        android:paddingLeft="15sp"/>
+                    <TextView
+                        android:id="@+id/proaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="address"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="15sp"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_secondcontactdetials"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="second contact detials "
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="18sp"
+                    android:background="@color/colorPrimary"
+                    android:drawableRight="@drawable/ic_action_down"
+                    android:elevation="15sp"
+                    android:padding="5sp"
+                    />
+                <LinearLayout
+                    android:id="@+id/secondcontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="RtlCompat"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Member Name"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginTop="5sp"
+                        android:paddingLeft="15sp"/>
+                    <TextView
+                        android:id="@+id/promamname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="name"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Member Mobile no"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginTop="5sp"
+                        android:paddingLeft="15sp"/>
+                    <TextView
+                        android:id="@+id/promemphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="xxxxxxxxxx"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:paddingLeft="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Member Email"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginTop="5sp"
+                        android:paddingLeft="15sp"/>
+
+                    <TextView
+                        android:id="@+id/promememail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:paddingLeft="15sp"
+                        android:text="email@gmail.com"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_licence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_action_down"
+                android:elevation="15sp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:padding="5sp"
+                android:text="license &amp; Identy  "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/licenseproof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="RtlCompat"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="license image"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="5sp"
+                    android:paddingLeft="15sp"
+                    android:layout_margin="5sp"/>
+                <ImageView
+                    android:id="@+id/prolicenseimg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_margin="5sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/prolicenseimg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_margin="5sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID Proof"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="5sp"
+                    android:paddingLeft="15sp"/>
+                <ImageView
+                    android:id="@+id/proidentyimg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_margin="5sp"/>
+                <ImageView
+                    android:id="@+id/proidentyimg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_margin="5sp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/profile_logout"
+                android:textColor="#fff"
+                android:background="@drawable/buttonstyleithgradient"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginBottom="@dimen/dimen_15dp"
+                android:text="Log Out"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

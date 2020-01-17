@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    // I think it should be more smaller if i set 15sp.
+    <item
+        android:drawable="@drawable/ic_action_to"
+        android:width="40sp"
+        android:height="20sp"
+        android:left="20sp"
+        android:right="20sp"
+        />
+
+</layer-list >

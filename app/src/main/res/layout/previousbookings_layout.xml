@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="@dimen/dimen_10dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bike1" />
+
+            <TextView
+                android:id="@+id/vehicalTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:text="royal enfield classic 350"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vehicalTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/vehicle_pickUpLoctaion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_edit_location_black_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:text="pic loc: " />
+
+                <TextView
+                    android:id="@+id/vehicle_pickDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:text="13hours " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/vehicle_droppingLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_edit_location_black_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:text="Drop loc: " />
+
+                <TextView
+                    android:id="@+id/vehicle_DropDatetime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:text="13hours " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/vehicleOrderDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/imageView"
+                    android:gravity="center"
+                    android:text="13/08/2000"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/vehicle_orderAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/imageView"
+                    android:text="Total Fare :55,345 INR "
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <!--   <LinearLayout
+                   android:id="@+id/linearLayout"
+                   android:layout_width="match_parent"
+                   android:layout_below="@id/vehicalTitle"
+                   android:layout_toRightOf="@id/imageView"
+                   android:orientation="horizontal"
+                   android:weightSum="2"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:id="@+id/vehicle_pickDateTime"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="13hours "
+                       android:paddingLeft="@dimen/dimen_10dp"
+                       android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                       android:gravity="center"
+                       />
+
+                   <TextView
+                       android:id="@+id/vehicle_DropDatetime"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="13hours "
+                       android:paddingLeft="@dimen/dimen_10dp"
+                       android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                       android:gravity="center"
+                       />
+               </LinearLayout>
+               <TextView
+                   android:id="@+id/vehicle_orderAmount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/linearLayout"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_toRightOf="@id/imageView"
+                   android:text="Total Fare :55,345 INR (50.00 INR)"
+                   android:textColor="@color/black"
+                   />
+               <TextView
+                   android:id="@+id/vehicle_pickUpLoctaion"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/vehicle_orderAmount"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_toRightOf="@id/imageView"
+                   android:text="Pick Up:Tirupathi"
+                   android:textColor="@color/black"
+                   />
+               <TextView
+                   android:id="@+id/vehicle_droppingLocation"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/vehicle_pickUpLoctaion"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_toRightOf="@id/imageView"
+                   android:text="Dropping :Tirupathi"
+                   android:textColor="@color/black"
+                   />
+               <TextView
+                   android:id="@+id/location"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/vehicle_droppingLocation"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_toRightOf="@id/imageView"
+                   android:text="Dropping :Tirupathi"
+                   android:textColor="@color/black"
+                   />
+               <TextView
+                   android:id="@+id/vehicleOrderDate"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/location"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_toRightOf="@id/imageView"
+                   android:text="Dropping :Tirupathi"
+                   android:textColor="@color/black"
+                   />
+           -->
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

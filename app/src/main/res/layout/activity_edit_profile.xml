@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/editiImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@drawable/profileimg" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/proid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09"
+        android:visibility="gone" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/name"
+                    android:drawablePadding="10dp"
+                    android:padding="@dimen/dimen_10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Name" />
+
+
+
+
+                <TextView
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="@dimen/dimen_10dp"
+
+                    android:drawableLeft="@drawable/ic_action_email"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Email" />
+
+
+
+                <TextView
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="@dimen/dimen_10dp"
+
+                    android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Phone" />
+
+
+                <TextView
+                    android:id="@+id/etDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/dateofbirth"
+                    android:drawablePadding="10dp"
+                    android:padding="@dimen/dimen_10dp"
+
+                    android:fontFamily="@font/poppins"
+                    android:hint="DateOfBirth" />
+
+
+                <TextView
+                    android:id="@+id/etGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="@dimen/dimen_10dp"
+
+                    android:drawableLeft="@drawable/dateofbirth"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Gender" />
+
+
+
+                <TextView
+                    android:id="@+id/etNation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="@dimen/dimen_10dp"
+
+                    android:drawableLeft="@drawable/ic_action_email"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Nation" />
+
+
+
+                <TextView
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="@dimen/dimen_10dp"
+
+                    android:drawableLeft="@drawable/ic_edit_location_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Address" />
+
+
+
+                <TextView
+                    android:id="@+id/etMemberName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/name"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:padding="@dimen/dimen_10dp"
+
+                    android:hint="MemberName" />
+
+
+
+                <TextView
+                    android:id="@+id/etMemberEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_email"
+                    android:drawablePadding="10dp"
+                    android:padding="@dimen/dimen_10dp"
+
+                    android:fontFamily="@font/poppins"
+                    android:hint="MemberEmail" />
+
+
+
+                <TextView
+                    android:id="@+id/etMemberMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:padding="@dimen/dimen_10dp"
+
+                    android:fontFamily="@font/poppins"
+                    android:hint="MemberPhone" />
+
+            <LinearLayout
+                android:id="@+id/licenseproof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="RtlCompat"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="10sp"
+                android:padding="@dimen/dimen_10dp"
+
+                android:layout_marginBottom="10sp"
+                android:visibility="visible"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="license image"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="5sp"
+                    android:paddingLeft="15sp"
+                    android:layout_margin="5sp"/>
+                <ImageView
+                    android:id="@+id/prolicenseimg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/ic_menu_gallery"
+
+                    />
+                <ImageView
+                    android:id="@+id/prolicenseimg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:src="@drawable/ic_menu_gallery"
+
+                    android:layout_margin="5sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID Proof"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="5sp"
+                    android:paddingLeft="15sp"
+                    android:layout_margin="5sp"/>
+                <ImageView
+                    android:id="@+id/proidentyimg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:fontFamily="@font/poppins"
+                    android:src="@drawable/ic_menu_gallery"
+                    android:layout_margin="5sp"/>
+                <ImageView
+                    android:id="@+id/proidentyimg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:src="@drawable/ic_menu_gallery"
+                    android:fontFamily="@font/poppins"
+                    android:layout_margin="5sp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="update"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonstyleithgradient"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

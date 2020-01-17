@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactFragment"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="contact us"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_margin="25sp"
+        android:padding="5sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:background="@drawable/contactmap"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15sp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contactus"
+        android:textSize="18sp"
+        android:layout_margin="5sp"
+        android:textColor="@color/black"
+        android:padding="5sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="       (+91) 8106454599"
+        android:textSize="18sp"
+        android:layout_margin="5sp"
+        android:padding="5sp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_action_contact"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="       Contact@journeywheels.in"
+        android:textSize="18sp"
+        android:layout_margin="5sp"
+        android:padding="5sp"
+        android:drawableLeft="@drawable/ic_action_bkemail"
+        />
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
